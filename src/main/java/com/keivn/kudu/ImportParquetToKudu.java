@@ -26,7 +26,8 @@ public class ImportParquetToKudu {
 
   static {
     tableName = "impala::impala_kudu.clicklog";
-    KUDU_MASTER = "ip-10-12-254-200.ec2.internal:7051";
+    //KUDU_MASTER = "ip-10-12-254-200.ec2.internal:7051";
+    //KUDU_MASTER = "master-hostnamel:7051";
 
     client = new KuduClient.KuduClientBuilder(KUDU_MASTER).build();
     try {
